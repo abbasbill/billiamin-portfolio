@@ -197,8 +197,8 @@ h2{
     .container{
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 0em;
-        gap: 5em;
+        margin-top: 1em;
+        gap: 2em;
     }
     .right-content{
         margin-top: 25px;
