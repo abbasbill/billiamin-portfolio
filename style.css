@@ -115,6 +115,7 @@ h2{
     max-width: 25em;
     margin: 0 auto;
     padding: 10px;
+    line-height: 5px;
 }
 
 .profile-image{
@@ -137,7 +138,8 @@ h2{
 }
 
 .right-content h2{
-    margin-bottom: 10px;
+    margin: 10px auto;
+
 }
 
 .right-content p{
