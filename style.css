@@ -64,6 +64,7 @@ body{
     align-items: center;
     gap: 10px;
     padding-top: 2em;
+    margin: 0 auto;
 }
 
 /* ICONS */
@@ -140,6 +141,7 @@ h2{
 .about-mee{
     margin: 10px auto;
     padding: 0 auto;
+    text-align: center;
 }
 
 .right-content p{
