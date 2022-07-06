@@ -24,7 +24,9 @@
         color: hsl(0, 80%, 30%);
     }
     /* NAVLINKS */
-    
+    .nav-link-wrapper{
+        display: flex;
+    }
     .nav-link{
     color:  hsl(0, 80%, 30%);
     font-weight: bold;
@@ -181,7 +183,12 @@ h2{
       .logo{
         font-size: 15px;
     }
-
+    .fullname{
+        font-size: 12px;
+    }
+    .nav-link-wrapper{
+    flex-direction: row;
+    }
     .nav-link{
         font-size: 10px;
     }
@@ -209,6 +216,7 @@ h2{
     .fullname, .brief{
         font-size: 20px;
         text-align: center;
+        margin: 0 auto;
     }
     
     .work-place-wrapper{
