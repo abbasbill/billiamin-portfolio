@@ -309,6 +309,7 @@
       justify-content: space-between;
       margin-top: 0em;
       gap: 5em;
+      padding: 2em;
   }
   .right-content{
       margin-top: 25px;
