@@ -112,6 +112,7 @@ h2{
 .about-brief{
     max-width: 25em;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .profile-image{
@@ -119,7 +120,10 @@ h2{
     min-height: 15em;
     
 }
-
+.btn-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 .btn{
     font-size: 10px;
     padding: 0.5em 4em;
