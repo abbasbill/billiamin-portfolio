@@ -169,12 +169,12 @@
 
 .service-card-wrapper{
     background-color: #F2EDDB;
-    margin: 0 auto;
+    margin: 1em auto;
     margin-bottom: 10rem;
     display: flex;
     justify-content: center;
     gap: 10em;
-    padding: 5em;
+    padding: 5em 5em 1em 5em;
     
     max-width: 90%;
 }
@@ -249,6 +249,52 @@
     bottom: 10px;
 }
 
+
+.hero-section .image-section {
+    width: 30%;
+    transform: translateY(2rem);
+}
+ 
+.image-section .image {
+    display: block;
+    width: 90% ;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    margin-left: auto;
+}
+.meetup-container {
+    font-family: 'Open Sauce', sans-serif;
+    margin: 10rem 4rem 2rem 4rem;
+}
+.meetup-container h3 {
+    text-align: center;
+    color: #AAAAAA;
+    margin-bottom: .7rem;
+    text-transform: uppercase;
+    text-decoration: #AAAAAA underline;
+}
+.meetup-images {
+   columns: 4;
+   column-gap: 1rem;
+
+}
+.gallery-frame {
+    padding: .5rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #eee;
+    color: hsl(0, 0%, 10%);
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .gallery-img {
+    max-width: 100%;
+    object-fit: cover;
+    transition: opacity 0.25s ease-in-out;
+  }
+
 @media (max-width:680px){
     
     .logo{
@@ -315,4 +361,20 @@
       width: 250px;
       height: 350px;
   }
+}
+
+@media  (min-width:600px) and (max-width: 1000px) {
+    .meetup-images {
+       columns: 2;
+       column-gap: 1rem;
+    
+    }
+}
+
+@media  (min-width:300px) and (max-width: 599px) {
+    .meetup-images {
+       columns: 1;
+       column-gap: 1rem;
+    
+    }
 }
