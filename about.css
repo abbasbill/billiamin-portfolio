@@ -11,19 +11,119 @@
 
 .header-content-wrapper{
     display: flex;
+    position: fixed;
+    width: 100%;
+    /* background-color: rgb(235, 214, 214); */
+    background-color:  #f1f1f1;
+    top: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 5em;
-    margin-bottom: 3.5em;
+    /* padding: 1rem 5rem; */
+    /* /* margin-bottom: 2rem;   */
     }
 
     .logo{
         font-size: 30px;
         font-weight: bold;
-        color: hsl(0, 80%, 30%);
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
     }
     
-    
+     /* sdgamhefebasd-------------------------------------------------------------------------dfdfdffdfdfd */
+   
+  
+.nav__list {
+    list-style: none;
+    display: flex;
+    /* height: 100%; */
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin: 0rem 0.1rem; */
+    padding: 0rem 4rem;
+}
+
+.nav-link {
+    font-weight: bold;
+    text-decoration: none;
+    color:  hsl(0, 80%, 30%);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: wheat;
+}
+
+.nav-toggle{
+    width: 2em;
+    height: 2em;
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 4rem;
+    /* top: 2rem; */
+    z-index: 1000;
+}
+
+
+.nav-open  .navlink-wrapper {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
+
+
+.hamburger {
+    display: none;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background: black;
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
+
+/* ghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+
+
     /* NAVLINKS */
     
     .nav-link{
@@ -37,8 +137,6 @@
 
 
     body{
-   
-
         background-color:  rgba(235,236,240,0.5);
     }
 
@@ -55,14 +153,18 @@
 }
 
 .about-me{
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 90%;
+    margin: 10em auto;
     background-color: #F2EDDB;
 }
 
 .about-brief{
-    margin-top: 20px;
-    line-height: 2;
+    margin-top: 10px;
+    line-height: 2.5;
+}
+
+.feats-list{
+    margin-top: 10px;
 }
 
 /* PLACE OF WORK SECTION */
@@ -170,7 +272,7 @@
 .service-card-wrapper{
     background-color: #F2EDDB;
     margin: 1em auto;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     display: flex;
     justify-content: center;
     gap: 10em;
@@ -227,13 +329,19 @@
 }
 
 /* SOCIAL MEDIA ACCOUNT */
+.connect-with-me{
+    background-color:  #F2EDDB;
+    width: 90%;
+    margin: 0 auto;
+}
 .social-account-wrapper{
+   
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
     margin-top: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .social-account-wrapper svg{
@@ -296,13 +404,48 @@
   }
 
 @media (max-width:680px){
+    .navlink-wrapper{
+        position: fixed;
+        background: rgb(255, 255, 255);
+        top: 10%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    }
+    
+     
+    .nav__list {
+        height: 100%;
+        flex-direction: column;
+        height: 70%;
+        padding: 5rem;
+        
+    }
+    .header-content-wrapper{
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 1rem;
+    }
+
     
     .logo{
-      font-size: 15px;
-  }
+        position: relative;
+    }
+
+    .navlink-wrapper{
+        flex-direction: column;
+        justify-content: space-between;
+        }
 
   .nav-link{
-      font-size: 10px;
+      font-size: 20px;
   }
   .container{
       flex-direction: column;
@@ -379,3 +522,4 @@
     
     }
 }
+

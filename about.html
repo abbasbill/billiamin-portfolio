@@ -11,16 +11,27 @@
 <body>
     
   <header>
-    <!--Navigation section-->
-    <section class="header-content-wrapper">
-      <div class="logo"><a href="home.html" class="nav-link active">sQuare</a></div>
-      <nav class="navlinks-wrapper">
-      <a href="home.html" class="nav-link active">Home</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="project.html" class="nav-link">Projects</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
-      </section>
+  
+<!--Navigation section-->
+<section class="header-content-wrapper">
+
+  <div class="logo">
+    <a href="home.html" class="nav-link">sQuare</a>
+  </div>
+  <button class="nav-toggle" aria-label="toggle navigation">
+    <span class="hamburger"></span>
+  </button>
+  <nav class="navlink-wrapper">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="home.html" class="nav-link active">Home</a></li>
+      <li class="nav__item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav__item"><a href="project.html" class="nav-link">Projects</a></li>
+      <li class="nav__item"><a href="contact.html" class="nav-link">Contacts</a></li>
+    </ul>   
+  </nav>
+  </section>
+</header>
+
     </header>
 
 
@@ -40,14 +51,10 @@ And he believes these are the rock upon which the advancement of humanity can be
  He has achieved the following feats
           vis-à-vis:
         </p>
-        <ul>
+        <ul class="feats-list">
           <li>Built a personal portfolio website</li>
           <li>Built a demo meetup web app for setting up local meetups</li>
           <li>Hands-on built a web scraper to comb data from the web</li>
-          <li>
-            Completed Python courses on LinkedIn learning, progate.com and
-            freecodecamp.org.
-          </li>
         </ul>
       </section>
 
@@ -115,54 +122,42 @@ And he believes these are the rock upon which the advancement of humanity can be
 
 
 
-      <!-- <section class="section gallery-section">
-        <h2>GALLERY</h2>
-
-        <section class="gallery-wrapper">
-        <div class="gallery">
-          <div><img src="./image/IMG_3007.JPG"></div>
-          <div><img src="./image/IMG_3064.JPG"> </div>
-          <div><img src="./image/IMG_3089.JPG"></div>
-          <div><img src="./image/IMG_3091.JPG"></div>
-          <div><img src="./image/IMG_3104.JPG"></div>
-          <div><img src="./image/IMG_3189.JPG"></div>
-          <div><img src="./image/IMG_3202.JPG"></div>
-          <div><img src="./image/IMG_3219.JPG"></div>
-        </div>
-      </section>
-      </section> -->
-
-
-    </section>
+    
     <div class="meetup-container">
       <h3>TiideLab Physical Meetup Gallery</h3>
       <section class="meetup-images">
         <figure class="gallery-frame">
-          <img class="gallery-img gallery-image" src="images/IMG_3202.JPG" alt="symbol image" title="symbol image">
+          <img class="gallery-img gallery-image" src="images/x (011).JPG" alt="" title="image">
         </figure>
         <figure class="gallery-frame">
-          <img class="gallery-img gallery-image" src="images/IMG_3189.JPG" alt="symbol image" title="symbol image">
+          <img class="gallery-img gallery-image" src="images/z (4).jpg" alt="" title="image">
         </figure>
         <figure class="gallery-frame">
-          <img class="gallery-img gallery-image" src="images/IMG_3007.JPG" alt="symbol image" title="symbol image">
+          <img class="gallery-img gallery-image" src="images/z (3).jpeg" alt="" title="image">
         </figure>
         <figure class="gallery-frame">
-          <img class="gallery-img friends-image" src="images/IMG_3219.JPG" alt="symbol image" title="symbol image">
+          <img class="gallery-img gallery-image" src="images/x (2).JPG" alt="" title="image">
         </figure>
         <figure class="gallery-frame">
-          <img class="gallery-img gallery-image" src="images/IMG_3203.JPG" alt="symbol image" title="symbol image">
+          <img class="gallery-img gallery-image" src="images/x (5).JPG" alt="" title="image">
         </figure>
         <figure class="gallery-frame">
-          <img class="gallery-img gallery-image" src="images/IMG_3090.JPG" alt="symbol image" title="symbol image">
+          <img class="gallery-img friends-image" src="images/x (10).JPG" alt="" title="image">
         </figure>
         <figure class="gallery-frame">
-          <img class="gallery-img gallery-image" src="images/IMG_3091.JPG" alt="symbol image" title="symbol image">
+          <img class="gallery-img gallery-image" src="images/x (11).JPG" alt="" title="image">
+        </figure>
+        <figure class="gallery-frame">
+          <img class="gallery-img gallery-image" src="images/x (12).JPG" alt="" title="image">
+        </figure>
+        <figure class="gallery-frame">
+          <img class="gallery-img gallery-image" src="images/x (14).JPG" alt="" title="image">
         </figure>
       </section>
     </div>
 
         <!--SOCIAL MEDIA-->
-        <section class=" section connect-with-me">
+        <section class="section connect-with-me">
           <h2>Connect With Me</h2>
           <section class="social-account-wrapper">
             <!--TWITTER SVG-->
@@ -207,6 +202,8 @@ And he believes these are the rock upon which the advancement of humanity can be
             </svg></a> 
           </section>
         </section>
+        <script src="js/index.js"></script>
+
     </body>
 
 </html>
