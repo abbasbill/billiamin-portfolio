@@ -154,7 +154,7 @@
 
 .about-me{
     max-width: 90%;
-    margin: 10em auto;
+    margin: 10rem auto 5rem auto;
     background-color: #F2EDDB;
 }
 
@@ -257,37 +257,29 @@
 }
 
 /* SERVICE SECTION */
-/* .service-section{ */
-   
-    /* margin: 40px auto; */
-    /* min-height: 300px; */
-    /* background-color: red */
-/* } */
 
 .service-section h2{
     color: hsl(0, 80%, 30%);
     margin-bottom: 40px;
+    margin-top: 1rem;
 }
 
 .service-card-wrapper{
     background-color: #F2EDDB;
-    margin: 1em auto;
+    margin: 5rem auto;
     margin-bottom: 5rem;
     display: flex;
     justify-content: center;
     gap: 10em;
-    padding: 5em 5em 1em 5em;
-    
     max-width: 90%;
 }
 .service-section{
     background-color:  #F2EDDB;
-    margin: 0 auto;
+    margin: 5rem auto;
     max-width: 90%;
 }
 
 .service-card{
-    /* background-color: white; */
     background-color:  rgba(235,236,240,0.5);
     box-shadow: 0 4px 8px 0 rgba(0 0 0 0.2);
     transition: 0.3s;
@@ -314,7 +306,7 @@
 .service-card-content {
     text-align: center;
     padding: 2px 16px;
-    width: 300px;
+    max-width: 300px;
 }
 
 .service-title{
@@ -496,6 +488,14 @@
       flex-direction: column;
       width: 80%;
   }
+
+  .service-card:hover{
+    box-shadow: 0 8px 16px 0 rgba(225, 225, 255, 0.4);
+    background-color: #fff;
+}
+
+
+
   .form-group input{
       width: 250px;
       font-size: 12px;
